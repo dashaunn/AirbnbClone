@@ -6,11 +6,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <main>
       
       <Navbar />
 
-    </div>
+    </main>
   )
 }
 
