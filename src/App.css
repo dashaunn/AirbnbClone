@@ -10,6 +10,15 @@ body {
 h1 {
   margin: 0;
 }
+
+h2 {
+  font-size: .75rem;
+  font-weight: normal;
+}
+
+section {
+  padding: 20px;
+}
 /* Navbar component */
 
 nav {
@@ -23,12 +32,21 @@ nav {
   max-width: 100px;
 }
 
+.gray {
+  color: hsla(254, 6%, 58%, 1);
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* Hero component */
 
 .hero--container {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 0 3rem;
 }
 
 .hero--photo {
@@ -48,4 +66,74 @@ nav {
   margin-top: 1rem;
   line-height: 110%;
   max-width: 65vw;
+}
+
+/* Card component */
+
+.cards-list {
+  padding: 3rem;
+  display: flex;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.rating {
+  padding-left: .15rem;
+}
+
+.review-count {
+  padding-left: .15rem;
+}
+
+.location {
+  padding-left: .15rem;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.card--star {
+  height: 14px;
+  align-items: center;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absolute;
+  text-transform: capitalize;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
